@@ -27,6 +27,13 @@ const MainTable = ({
                             className="bg-secondary text-white fs-4"
                           >
                             {col.render("Header")}
+                            <span>
+                              {col.isSorted // true if the column is sorted at this monent
+                                ? col.isSortedDesc // for deciding the direction of the sorting
+                                  ? " 🔽" // descending
+                                  : " 🔼" //ascending
+                                : ""}
+                            </span>
                           </th>
                         </>
                       );

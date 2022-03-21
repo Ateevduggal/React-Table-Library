@@ -6,7 +6,7 @@ const Filtering = ({ filter, setFilter }) => {
       <span className="my-3">
         <h3>Search</h3>
         <input
-        className="col-2"
+          className="col-2"
           type="text"
           value={filter || ""}
           onChange={(e) => setFilter(e.target.value)}

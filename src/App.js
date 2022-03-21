@@ -38,7 +38,7 @@ const App = () => {
     },
     useGlobalFilter,
     useSortBy,
-    usePagination //should be at the very botom to avoid errors
+    usePagination //should be at the very bottom to avoid errors
   );
 
   return (
